@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.MenuActivity">
+
+    <TextView
+        android:id="@+id/bienvenidaTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bienvenid@ client@"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnRutina"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/btnRutina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Rutina"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnDieta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bienvenidaTextView"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/btnDieta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Dieta"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toTopOf="@+id/btnInformacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRutina"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/btnInformacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Información"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDieta"
+        app:layout_constraintVertical_bias="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

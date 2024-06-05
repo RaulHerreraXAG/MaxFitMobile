@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/inicio" />
+    <item
+        android:id="@+id/navigation_rutina"
+        android:icon="@drawable/baseline_sports_martial_arts_24"
+        android:title="@string/rutina" />
+    <item
+        android:id="@+id/navigation_diet"
+        android:icon="@drawable/baseline_food_bank_24"
+        android:title="@string/dieta" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_person_24"
+        android:title="@string/perfil" />
+</menu>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MaxFit</string>
+    <string name="inicio">Inicio</string>
+    <string name="rutina">Rutina</string>
+    <string name="dieta">Dieta</string>
+    <string name="perfil">Perfil</string>
+</resources>

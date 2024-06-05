@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvDia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Día"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de la receta" />
+
+    <TextView
+        android:id="@+id/tvMomento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Momento del dia" />
+
+    <TextView
+        android:id="@+id/tvKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kcal Totales" />
+</LinearLayout>

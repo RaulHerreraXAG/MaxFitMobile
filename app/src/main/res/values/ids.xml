@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="txtAltura" type="id" />
+    <item name="labelAltura" type="id" />
+    <item name="txtGenero" type="id" />
+    <item name="labelPeso" type="id" />
+    <item name="txtPeso" type="id" />
+    <item name="labelCorreo" type="id" />
+    <item name="txtCorreo" type="id" />
+    <item name="labelFechaInicio" type="id" />
+    <item name="txtFechaInicio" type="id" />
+    <item name="labelFechaFin" type="id" />
+    <item name="txtFechaFin" type="id" />
+    <item name="labelObservacion" type="id" />
+    <item name="txtObservacion" type="id" />
+    <item name="labelNombre" type="id" />
+    <item name="txtNombre" type="id" />
+    <item name="labelApellidos" type="id" />
+    <item name="txtApellidos" type="id" />
+    <item name="labelEdad" type="id" />
+    <item name="labelGenero" type="id" />
+    <item name="txtEdad" type="id" />
+</resources>
