@@ -1,5 +1,6 @@
 package com.example.maxfit.Activity
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -97,10 +98,19 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun iniciarMenu() {
-        val intent = Intent(this, MenuActivity::class.java)
-        intent.putExtra("MATRICULA_CLIENTE", matriculaCliente)
-        intent.putExtra("NOMBRE_CLIENTE", nombreCliente)
-        startActivity(intent)
+        if (txtPassword.text.toString().equals("Maxfit2024", ignoreCase = true)) {
+            // Si la contraseña es Maxfit2024, redirige a una actividad especial para cambio de contraseña
+            val intent = Intent(this, CambioContrasenaActivity::class.java)
+            intent.putExtra("MATRICULA_CLIENTE", matriculaCliente)
+            intent.putExtra("NOMBRE_CLIENTE", nombreCliente)
+            startActivity(intent)
+        } else {
+            // Si la contraseña no es Maxfit2024, redirige a la actividad del menú principal
+            val intent = Intent(this, MenuActivity::class.java)
+            intent.putExtra("MATRICULA_CLIENTE", matriculaCliente)
+            intent.putExtra("NOMBRE_CLIENTE", nombreCliente)
+            startActivity(intent)
+        }
     }
 
     private fun authenticateUser(correo: String, contrasena: String) {
