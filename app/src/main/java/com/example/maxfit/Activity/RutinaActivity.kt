@@ -27,14 +27,12 @@ class RutinaActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_rutina)
 
-        //txtMatricula = findViewById(R.id.matriculaTextView)
         recyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         rutinaAdapter = RutinaAdapter() // Inicializa tu adaptador aquí
         recyclerView.adapter = rutinaAdapter
 
         val matriculaCliente2 = LoginActivity.matriculaCliente
-
 
         // Verificar que la matrícula del cliente no sea nula
         if (matriculaCliente2 != null) {
@@ -109,13 +107,13 @@ class RutinaAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     fun setEjercicios(lista: List<Ejercicio>) {
         items.clear()
-        var lastDay: String? = null
-        lista.forEach { ejercicio ->
-            if (ejercicio.dia != lastDay) {
-                items.add(ejercicio.dia)
-                lastDay = ejercicio.dia
+        val diasOrdenados = listOf("Lunes", "Martes", "Miércoles", "Jueves", "Viernes")
+        for (dia in diasOrdenados) {
+            val ejerciciosDia = lista.filter { it.dia == dia }
+            if (ejerciciosDia.isNotEmpty()) {
+                items.add(dia)
+                items.addAll(ejerciciosDia)
             }
-            items.add(ejercicio)
         }
         notifyDataSetChanged()
     }
@@ -164,10 +162,7 @@ class RutinaAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             tvNombreEjercicio.text = ejercicio.nombre
             tvCuerpo.text = "Series: ${ejercicio.series}"
             tvNumero.text = "Repeticiones: ${ejercicio.repeticiones}"
-            tvObservaciones.text = "Grupo Muscolar: ${ejercicio.grupo}"
+            tvObservaciones.text = "Grupo Muscular: ${ejercicio.grupo}"
         }
     }
 }
-
-
-

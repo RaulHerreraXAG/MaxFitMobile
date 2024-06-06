@@ -16,8 +16,8 @@ class DietaDetalleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_dieta_detalle)
 
         tvReceta = findViewById(R.id.tvRecetaDetalle)
-        tvPasos = findViewById(R.id.tvPasos)
-        tvAlimentos = findViewById(R.id.tvAlimentos)
+        tvPasos = findViewById(R.id.tvPasosDetalle)
+        tvAlimentos = findViewById(R.id.tvAlimentosDetalle)
 
         val receta = intent.getStringExtra("RECETA")
         val pasos = intent.getStringExtra("PASOS")

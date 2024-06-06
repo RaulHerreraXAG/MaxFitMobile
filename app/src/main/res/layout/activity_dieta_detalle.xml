@@ -1,31 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvRecetaDetalle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre de la receta"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvPasos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pasos a seguir"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp" />
+        <TextView
+            android:id="@+id/tvRecetaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receta"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tvAlimentos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Alimentos"
-        android:textSize="18sp" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvRecetaDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la receta"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAlimentosLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimentos que se usan:"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvAlimentosDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alimentos:"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvPasosLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pasos a seguir:"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tvPasosDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasos"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

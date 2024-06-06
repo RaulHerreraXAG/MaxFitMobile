@@ -9,7 +9,8 @@ data class Dieta(
     val grasasTotal: String,
     val pasos: String,
     val alimentos: String,
-    val momento_dia: String
+    val momento_dia: String,
+    val diaOrden: Int
 )
 
 

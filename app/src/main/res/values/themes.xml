@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MaxFit" parent="Theme.Material3.DayNight">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Agrega esta línea para establecer el fondo -->
+        <item name="android:windowBackground">@drawable/background_app</item>
     </style>
+    <style name="BotonNegro" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/boton_negro_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
 
     <style name="Theme.MaxFit" parent="Base.Theme.MaxFit" />
 </resources>

@@ -1,52 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp">
 
-
-    <TextView
-        android:id="@+id/tvNombreEjercicio"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre del Ejercicio"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tvCuerpo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Parte del Cuerpo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNombreEjercicio"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tvNombreEjercicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre del Ejercicio"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/tvNumero"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Número de Repeticiones"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvCuerpo"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tvCuerpo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Parte del Cuerpo"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNombreEjercicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/tvObservaciones"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Observaciones"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvNumero"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tvNumero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Número de Repeticiones"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCuerpo"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvObservaciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Observaciones"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvNumero"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
