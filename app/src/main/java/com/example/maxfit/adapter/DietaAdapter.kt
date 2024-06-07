@@ -39,6 +39,8 @@ class DietaAdapter : RecyclerView.Adapter<DietaAdapter.DietaViewHolder>() {
         private val tvReceta: TextView = itemView.findViewById(R.id.tvReceta)
         private val tvMomento: TextView = itemView.findViewById(R.id.tvMomento)
         private val tvKcal: TextView = itemView.findViewById(R.id.tvKcal)
+        private val tvCarbohidratos: TextView = itemView.findViewById(R.id.tvCarbohidratos)
+        private val tvGrasas: TextView = itemView.findViewById(R.id.tvGrasas)
 
         fun bind(dieta: Dieta, dietaList: List<Dieta>, position: Int) {
             if (position == 0 || dietaList[position - 1].dia != dieta.dia) {
@@ -49,7 +51,9 @@ class DietaAdapter : RecyclerView.Adapter<DietaAdapter.DietaViewHolder>() {
             }
             tvReceta.text = dieta.nombre
             tvMomento.text = dieta.momento_dia
-            tvKcal.text = dieta.kcalTotal
+            tvKcal.text = "KCAL: ${dieta.kcalTotal}"
+            tvCarbohidratos.text = "Carbohidratos: ${dieta.carbohidratosTotal}"
+            tvGrasas.text = "Grasas: ${dieta.grasasTotal}"
 
             itemView.setOnClickListener {
                 val intent = Intent(itemView.context, DietaDetalleActivity::class.java).apply {

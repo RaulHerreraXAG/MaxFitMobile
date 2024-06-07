@@ -51,7 +51,23 @@
                 android:id="@+id/tvKcal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kcal Totales"
+                android:text="KCAL:"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvCarbohidratos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carbohidratos:"
+                android:textSize="20sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvGrasas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grasas:"
                 android:textSize="20sp"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
